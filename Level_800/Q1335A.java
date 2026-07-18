@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CandiesAndSisters {
+public class Q1335A {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 

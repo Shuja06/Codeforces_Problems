@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class SoftDrinking {
+public class Q151A {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 

@@ -3,7 +3,7 @@
 import java.util.HashSet;
 import java.util.Scanner;
  
-public class Main {
+public class Q271A {
     private static boolean isDistinct(int n){
         HashSet<Integer> set = new HashSet<>();
         

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // import java.util.HashMap;
 
-public class InsomniaCurve {
+public class Q148A {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         // HashMap<Integer, Integer> map = new HashMap<>();

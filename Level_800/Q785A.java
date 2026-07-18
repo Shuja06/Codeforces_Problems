@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AntonPolyhedrons {
+public class Q785A {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 

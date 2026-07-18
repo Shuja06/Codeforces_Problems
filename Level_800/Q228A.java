@@ -1,9 +1,9 @@
 // Is your horseshoe on the other hoof?
 
-import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Scanner;
  
-public class Main {
+public class Q228A {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
  

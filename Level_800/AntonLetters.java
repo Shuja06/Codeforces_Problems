@@ -1,5 +1,5 @@
-import java.util.Scanner;
 import java.util.HashSet;
+import java.util.Scanner;
 
 public class AntonLetters {
     public static void main(String[] args){

@@ -1,23 +1,23 @@
+// Plus or Minus
+
 import java.util.Scanner;
- 
-public class Q1742A {
-    public static void main(String[] args){
+
+public class Q1807A {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
- 
         int n = sc.nextInt();
- 
+
         for(int i=0; i<n; i++){
             int a = sc.nextInt();
             int b = sc.nextInt();
             int c = sc.nextInt();
- 
-            if(a+b == c || a+c == b || b+c == a){
-                System.out.println("YES");
+
+            if(a + b == c){
+                System.out.println("+");
             }else{
-                System.out.println("NO");
+                System.out.println("-");
             }
         }
- 
         sc.close();
     }
 }
