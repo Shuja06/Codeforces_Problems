@@ -1,23 +1,21 @@
 import java.util.Scanner;
 
-public class Sample {
+public class Q581A {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
 
         int dif_pairs = 0;
-        int same_pairs = 0;
         while(a > 0 && b > 0){
             a--;
             b--;
             dif_pairs++;
         }
-        while((a % 2 == 0 && a > 0) || (b % 2 == 0 && b > 0)){
-            a -= 2;
-            b -= 2;
-            same_pairs++;
-        }
+
+        int same_pairs = Math.max(a, b) / 2;
+        
         System.out.println(dif_pairs + " " + same_pairs);
+        sc.close();
     }
 }
