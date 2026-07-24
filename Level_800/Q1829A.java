@@ -20,6 +20,7 @@ public class Q1829A {
             }
             System.out.println(differ);
         }
+        
         sc.close();
     }
 }
