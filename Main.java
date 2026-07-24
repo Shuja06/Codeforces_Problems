@@ -1,27 +1,32 @@
 import java.util.Scanner;
-import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
-        String s = sc.nextLine();
-        HashSet<Character> set = new HashSet<>();
+        String str = "helloworld";
+        char[] a = str.toCharArray();
 
-        if(s.length() > n){
-            System.out.println("String is too large");
-            return;
-        }else{
-            for(int i=0; i<s.length(); i++){
-                set.add(s.charAt(i));
-            }
+        int l = 0;
+        int r = a.length-1;
+
+        while(l < r){
+            while(l < r && !isVowel(a[l])) l++;
+            while(l < r && !isVowel(a[r])) r--;
+            char temp = a[l];
+            a[l] = a[r];
+            a[r] = temp;
+            l++;
+            r--;
         }
 
-        // if(set.size() == 26){
-        //     System.out.println("YES");
-        // }else{
-        //     System.out.println("NO");
-        // }
+        for(int i=0; i<a.length; i++){
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static boolean isVowel(char ch){
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
     }
 }
