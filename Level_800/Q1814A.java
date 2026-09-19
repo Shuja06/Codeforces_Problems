@@ -1,4 +1,4 @@
-// Coins
+// Coins <- unsolved
 
 import java.util.Scanner;
 
@@ -9,17 +9,14 @@ public class Q1814A {
         int t = sc.nextInt();
 
         while (t-- > 0) {
-            int n = sc.nextInt();
-            int k = sc.nextInt();
+            long n = sc.nextLong();
+            long k = sc.nextLong();
 
-            if (n % 2 == 0) {
-                System.out.println("YES");
-            } else if (k % 2 == 1 && k <= n) {
+            if (n % 2 == 0 || (k % 2 == 1 && k <= n)) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
             }
-
         }
 
         sc.close();
